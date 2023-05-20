@@ -1,0 +1,320 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    text-decoration: none;
+}
+
+body {
+    background: #1f2641;
+}
+
+nav {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 7.5%;
+    width: 100%;
+    z-index: 55;
+}
+.butn{
+    font-size: 37px;
+    display: none;
+}
+
+.logo {
+    margin: 15px;
+    font-size: 26px;
+    font-family: roman;
+}
+
+.nav {
+    display: flex;
+}
+
+.nav>ul {
+    justify-content: end;
+    display: flex;
+    list-style: none;
+    font-family: arial;
+}
+.nav>ul>a {
+    margin: 20px;
+    height: 20px;
+}
+
+.nav>ul>a>li:hover {
+    color: red;
+}
+
+.nav>ul>a:hover {
+    margin-top: 15px;
+    transition: .3s;
+}
+
+.scroll {
+    background-color: #6c63ff;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+main {
+    /* minimum 800px */
+    width: 100%;
+    /* padding: 0 7.5%; */
+    padding-top: 75px;
+    /* justify-content: center; */
+}
+
+.image {
+    padding: 0 7.5%;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.image>img {
+    width: 100%;
+    margin-top: -6%;
+    border: 2px solid black;
+}
+
+.name {
+    width: 100%;
+    text-align: center;
+    position: sticky;
+    font-family: cursive;
+    font-size: 200%;
+    color: rgba(5, 5, 5, 0.664);
+    margin-top: 10px;
+}
+
+.categori {
+    display: flex;
+    background-color: #2e298d;
+    width: 100%;
+    padding: 0 7.5%;
+}
+
+.cate {
+    width: 40%;
+    margin: 2.25%;
+}
+
+.cate>h3 {
+    font-size: 35px;
+    font-family: serif;
+    margin-bottom: 10px;
+}
+
+.categories {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 2.25%;
+    margin-top: 5%;
+    width: 50%;
+}
+
+.categories>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin: 2.5%;
+    background-color: #3b32e7;
+    border-radius: 20px;
+}
+
+.categories>div>h4 {
+    font-size: 23px;
+}
+
+.categories>div>p {
+    margin-top: 5px;
+    font-size: 15px;
+}
+
+/* gallery css start */
+
+.gallery{
+    /* padding: 0 7.5%; */
+    width: 100%;
+    position: relative;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+}
+.swiper {
+    width: 100%;
+    margin: 50px 0;
+  }
+
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 400px;
+    height: 400px;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+  }
+
+/* gallery css end */
+
+/* notice page */
+
+.notice-image {
+    padding: 0 7.5%;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.notice {
+    width: 100%;
+    text-align: center;
+    font-family: cursive;
+    font-size: 200%;
+    color: rgba(255, 255, 255, 0.842);
+    margin-top: 10px;
+}
+
+#notice-img {
+    margin: 10px 25%;
+    width: 50%;
+    border: 2px solid rgb(255, 255, 255);
+}
+
+.notice-list {
+    width: 100%;
+    padding: 0 10%;
+}
+
+/* table staret */
+
+.customers {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.customers td,
+.customers th {
+    border: 2px solid rgb(255, 255, 255);
+    padding: 8px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+
+.customers tr:hover {
+    background-color: #ddd;
+}
+
+.customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: #04AA6D;
+    color: white;
+}
+
+.down-img>a>img{
+    height: 20px;
+}
+.down-img>a>img:hover{
+    height: 25px;
+}
+
+.notice-name:hover{
+    color: black;
+}
+.notice-name{
+    cursor: pointer;
+}
+/* table end */
+
+footer{
+    margin-top: 10px;
+    background-color: rgba(5, 5, 5, 0.664);
+    display: flex;
+    justify-content: center;
+}
+.copyright{
+    text-align: center;
+    margin: 10px;
+    font-size: 17px;
+}
+
+/* about page */
+
+.team{
+    padding: 0 7.5%;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.team>h2{
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.all-teacher{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.teacher{
+    background-color: #424890;
+    padding: 1.8rem;
+    padding-bottom: 1rem;
+    border: 1px solid transparent;
+    transition: all 400ms ease;
+    position: relative;
+    overflow: hidden;
+    margin: 3%;
+}
+.teacher:hover{
+    background: transparent;
+    border-color: #6c63ff;
+}
+.teacher-img>img{
+    filter: saturate(0);
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+.teacher:hover>.teacher-img>img{
+    filter: saturate(1);
+}
+.teacher-info>*{
+    text-align: center;
+    margin-top: 15px;
+}
+.teacher-info>h4{
+    font-size: 1.3rem;
+}
+.teacher-imfo>p{
+    color: rgba(255, 255, 255, 0.7);
+}
+.teacher-socia{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -100%;
+    display: flex;
+    flex-direction: column;
+    background: #6c63ff;
+    border-radius: 1rem 0 0 1rem;
+    box-shadow: -2rem 0 2rem rgba(0, 0, 0, 0.3);
+}
+.teacher-socia>a{
+    padding: 1rem;
+}
+.teacher:hover>.teacher-socia{
+    right: 0;
+    transition: all 400ms ease;
+}

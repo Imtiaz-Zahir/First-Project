@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav id="nav">
+        <div class="logo"><a href="./">K R.R.N</a></div>
+        <div class="nav">
+            <ul>
+                <a href="./">
+                    <li>Home</li>
+                </a>
+                <a href="./about.html">
+                    <li>About</li>
+                </a>
+                <a href="./notice.html">
+                    <li>Notice</li>
+                </a>
+                <a href="#">
+                    <li>Contact</li>
+                </a>
+            </ul>
+        </div>
+        <div class="butn">
+            <i class="uil uil-align-center-alt"></i>
+            <i class="uil uil-multiply"></i>
+        </div>
+    </nav>
+    <main>
+        <div class="image">
+            <h1 class="name">Kaligonj R.R.N Piloat Govt High School</h1>
+            <img src="./main img.jpg" draggable="false" alt="">
+        </div>
+        <div class="categori">
+            <div class="cate">
+                <h3>Categories</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit culpa itaque exercitationem mollitia
+                    aut vero doloribus excepturi odit, illum modi. Quibusdam velit alias possimus laborum.</p>
+            </div>
+            <div class="categories">
+                <div class="primary">
+                    <img src="https://img.icons8.com/color/64/000000/school-building.png" draggable="false" />
+                    <h4>School</h4>
+                    <p>Class 4 to Class 10</p>
+                </div>
+                <div class="open-uni">
+                    <img src="https://img.icons8.com/external-victoruler-linear-colour-victoruler/64/000000/external-university-education-and-school-victoruler-linear-colour-victoruler.png"
+                        draggable="false" />
+                    <h4>Open University</h4>
+                    <p>Open University only for SSC</p>
+                </div>
+            </div>
+        </div>
+        <div class="gallery">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./School gallery/1.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./School gallery/2.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./School gallery/3.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./School gallery/4.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./School gallery/5.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./School gallery/6.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./School gallery/7.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./School gallery/8.jpg" />
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p class="copyright"><span>&#169</span> 2022 Imtiaz Zahir. All rights reserved.</p>
+    </footer>
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        effect: "coverflow",
+        grabCursor: true,
+        loop: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+</body>
+
+</html>
